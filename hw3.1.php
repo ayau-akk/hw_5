@@ -6,7 +6,7 @@
 <?php
 
 
-class Car,
+class Car
 { 
 public  $marka;
 public  $driver;
@@ -50,7 +50,7 @@ $car = new Car();
 print_r($car);
 
 
-class Engine,
+class Engine
 {
 public $power;
 public $company;
@@ -61,16 +61,18 @@ $engine = new Engine();
 print_r($engine);
 
 
-class Driver,
+class Driver
 {
-public $name;
+public $fullName;
 public $experience;
 }
  
 $driver = new Driver();
 print_r($driver);
 
-
+class Person extends Driver {
+   public $fullName;
+}
 
 ?> 
 
